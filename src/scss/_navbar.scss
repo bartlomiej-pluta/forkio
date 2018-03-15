@@ -1,46 +1,54 @@
-#navbar-container {
-  margin: 0 90px;
+#nav {
+  $shrinking-duration: 0.4s;
+
+  margin: 0 0;
+  padding: 0 90px;
   height: 100px;
-}
+  background-color: white;
+  transition: height $shrinking-duration;
 
-#navbar-header {
-  display: flex;
-  justify-content: center;
-}
-
-#navbar-header {
-  img {
-    height: 45px;
+  &.shrink {
+    height: 50px;
+    transition: height $shrinking-duration;
   }
 
-  span {
-    margin-left: 17px;
-    font-family: Lato, sans-serif;
-    text-transform: uppercase;
-    font-size: 24px;
-    font-weight: bold;
+  #navbar-header {
+    display: flex;
+    justify-content: center;
 
-    em {
-      color: $primary;
-      font-style: normal;
+    img {
+      height: 45px;
+    }
+
+    span {
+      margin-left: 17px;
+      font-family: Lato, sans-serif;
+      text-transform: uppercase;
+      font-size: 24px;
+      font-weight: bold;
+
+      em {
+        color: $primary;
+        font-style: normal;
+      }
     }
   }
-}
 
-#navbar-body {
-  a {
-    text-transform: capitalize;
-    font-family: Montserrat, sans-serif;
-    font-size: 16px;
-    font-weight: bolder;
-  }
+  #navbar-body {
+    a {
+      text-transform: capitalize;
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+      font-weight: bolder;
+    }
 
-  a.default-link {
-    margin: 0 20px;
-    color: $primary-dark;
-  }
+    a.default-link {
+      margin: 0 20px;
+      color: $primary-dark;
+    }
 
-  a.raised-button {
-    @extend .raised-button
+    a.raised-button {
+      @extend .raised-button
+    }
   }
 }
