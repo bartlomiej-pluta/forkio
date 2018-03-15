@@ -19,7 +19,7 @@ var config = {
 
   cssIn: 'src/css/**/*.css',
   jsIn: 'src/js/**/*.js',
-  imgIn: 'src/img/**/*.{jpg,jpeg,png,gif}',
+  imgIn: 'src/img/**/*.{jpg,jpeg,png,gif,svg}',
   htmlIn: 'src/*.html',
   scssIn: 'src/scss/**/*.scss',
 
