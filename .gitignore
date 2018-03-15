@@ -1,0 +1,28 @@
+
+# Created by https://www.gitignore.io/api/node,macos,windows,linux
+
+# Dependency directories
+node_modules
+out
+
+# Intermediate CSS directory
+src/css
+
+### macOS ###
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+### Windows ###
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Windows shortcuts
+*.lnk
+
+# JetBrains WebStrom
+.idea
