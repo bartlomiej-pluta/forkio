@@ -1,0 +1,20 @@
+#download {
+  text-align: center;
+
+  a.raised-button {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 15px 60px;
+  }
+
+  p {
+    padding-top: 45px;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    color: $regular-text;
+    text-transform: capitalize;
+  }
+}
