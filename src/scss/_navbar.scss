@@ -48,6 +48,6 @@ $shrinking-duration: 0.4s;
 }
 
 .navbar__link:hover {
-  color: $primary;
+  color: darken($primary-dark, $hover-threshold);
   transition: $hover-duration;
 }

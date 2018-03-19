@@ -9,7 +9,7 @@
 }
 
 .rounded-button:hover {
-  background-color: $primary-light;
+  background-color: darken($primary, $hover-threshold);
   transition: $hover-duration;
   text-decoration: none;
   color: white;
