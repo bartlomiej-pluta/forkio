@@ -5,9 +5,9 @@ $(document).ready(function () {
     scrollTop = $(window).scrollTop();
 
     if (scrollTop >= 100) {
-      $('#nav').addClass('shrink');
+      $('.navbar').addClass('navbar--shrink');
     } else if (scrollTop < 100) {
-      $('#nav').removeClass('shrink');
+      $('.navbar').removeClass('navbar--shrink');
     }
   });
 });

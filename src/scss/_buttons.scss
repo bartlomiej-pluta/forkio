@@ -1,16 +1,28 @@
-a.raised-button {
-  $hover-transition-duration: 0.4s;
-
+.rounded-button {
   padding: 7px 35px;
   background-color: $primary;
   font-family: Montserrat, sans-serif;
   color: white;
+  border: none;
   border-radius: 30px;
-  transition: $hover-transition-duration;
+  transition: $hover-duration;
+}
 
-  &:hover {
-    background-color: $primary-dark;
-    transition: $hover-transition-duration;
-    text-decoration: none;
-  }
+.rounded-button:hover {
+  background-color: $primary-light;
+  transition: $hover-duration;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.rounded-button--strong {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.rounded-button--very-strong {
+  @extend .rounded-button--strong;
+  font-size: 21px;
+  padding: 15px 60px;
 }

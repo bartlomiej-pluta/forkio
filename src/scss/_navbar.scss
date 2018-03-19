@@ -1,54 +1,53 @@
-#nav {
-  $shrinking-duration: 0.4s;
+$shrinking-duration: 0.4s;
 
+.navbar {
   margin: 0 0;
   padding: 0 90px;
   height: 100px;
   background-color: white;
   transition: height $shrinking-duration;
+}
 
-  &.shrink {
-    height: 50px;
-    transition: height $shrinking-duration;
-  }
+.navbar--shrink {
+  height: 50px;
+  transition: height $shrinking-duration;
+}
 
-  #navbar-header {
-    display: flex;
-    justify-content: center;
+.navbar__header {
+  display: flex;
+  justify-content: center;
+}
 
-    img {
-      height: 45px;
-    }
+.navbar__logo {
+  height: 45px;
+  margin-right: 17px;
+}
 
-    span {
-      margin-left: 17px;
-      font-family: Lato, sans-serif;
-      text-transform: uppercase;
-      font-size: 24px;
-      font-weight: bold;
+.navbar__brand {
+  font-family: Lato, sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
 
-      em {
-        color: $primary;
-        font-style: normal;
-      }
-    }
-  }
+.navbar__brand--emph {
+  color: $primary;
+  font-style: normal;
+}
 
-  #navbar-body {
-    a {
-      text-transform: capitalize;
-      font-family: Montserrat, sans-serif;
-      font-size: 16px;
-      font-weight: bolder;
-    }
+.navbar__link {
+  text-transform: capitalize;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  margin: 0 20px;
+  color: $primary-dark;
+  transition: $hover-duration;
+}
 
-    a.default-link {
-      margin: 0 20px;
-      color: $primary-dark;
-    }
-
-    a.raised-button {
-      @extend .raised-button
-    }
-  }
+.navbar__link:hover {
+  color: $primary;
+  transition: $hover-duration;
 }

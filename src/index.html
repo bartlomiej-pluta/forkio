@@ -23,44 +23,47 @@
 </head>
 <body>
 <div class="wrapper" id="wrapper">
-    <nav class="navbar navbar-expand-lg sticky-top" id="nav">
+    <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
-            <div class="navbar-header" id="navbar-header">
-                <img src="img/logo.svg" alt="Forkio logo">
-                <span class="navbar-brand">Fork<em>IO</em></span>
+            <div class="navbar__header navbar-header">
+                <img class="navbar__logo" src="img/logo.svg" alt="Forkio logo">
+                <span class="navbar__brand">Fork</span>
+                <span class="navbar__brand navbar__brand--emph">IO</span>
             </div>
-            <ul class="navbar-nav" id="navbar-body">
+            <ul class="navbar__body navbar-nav">
                 <li class="nav-item">
-                    <a class="default-link nav-link" href="#">Overview</a>
+                    <a class="navbar__link nav-link" href="#">Overview</a>
                 </li>
                 <li class="nav-item">
-                    <a class="default-link nav-link" href="#">About fork</a>
+                    <a class="navbar__link nav-link" href="#">About fork</a>
                 </li>
                 <li class="nav-item">
-                    <a class="default-link nav-link" href="#">Buying options</a>
+                    <a class="navbar__link nav-link" href="#">Buying options</a>
                 </li>
                 <li class="nav-item">
-                    <a class="default-link nav-link" href="#">Support</a>
+                    <a class="navbar__link nav-link" href="#">Support</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="raised-button nav-link" href="#">Buy now</a>
+                    <a href="#">
+                        <button class="rounded-button rounded-button--strong">Buy now</button>
+                    </a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <header id="hero">
-        <!--<img src="img/hero/img.png">-->
+    <header class="header">
         <div>
-            <h1>Fork app</h1>
-            <h2>A real gamechanger in the world of web development</h2>
-            <h3>V. 2.8 for Mac and Windows</h3>
+            <p class="header__h1">Fork app</p>
+            <p class="header__h2">A real gamechanger in the world of web development</p>
+            <p class="header__h3">V. 2.8 for Mac and Windows</p>
         </div>
     </header>
-    <section id="download">
-        <a href="#" class="raised-button">Download for free now</a>
-        <p>Unlimited 30-Days trial period</p>
+    <section class="download">
+        <a href="#" class="rounded-button rounded-button--very-strong download__rounded-button--translated">
+            Download for free now
+        </a>
+        <p class="download__description">Unlimited 30-Days trial period</p>
     </section>
 </div>
 

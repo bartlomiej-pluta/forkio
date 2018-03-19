@@ -1,20 +1,17 @@
-#download {
+.download {
   text-align: center;
+}
 
-  a.raised-button {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    font-size: 21px;
-    font-weight: bold;
-    text-transform: capitalize;
-    padding: 15px 60px;
-  }
+.download__rounded-button--translated {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
 
-  p {
-    padding-top: 45px;
-    font-family: Montserrat, sans-serif;
-    font-size: 14px;
-    color: $regular-text;
-    text-transform: capitalize;
-  }
+.download__description {
+  padding-top: 45px;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: $regular-text;
+  text-transform: capitalize;
 }
