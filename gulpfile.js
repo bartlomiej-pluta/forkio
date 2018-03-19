@@ -46,6 +46,7 @@ gulp.task('serve', function() {
   gulp.watch(config.htmlIn, function() { sequence('html', 'reload') });
   gulp.watch(config.scssIn, function() { sequence('sass', 'css', 'reload') });
   gulp.watch(config.jsIn, function() { sequence('js', 'reload') });
+  gulp.watch(config.imgIn, function() { sequence('img', 'reload') });
 });
 
 gulp.task('sass', function() {
