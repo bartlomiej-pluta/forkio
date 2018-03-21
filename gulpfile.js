@@ -101,7 +101,7 @@ gulp.task('clean', function() {
 });
 
 gulp.task('build', function() {
-  sequence('clean', ['html', 'js', 'css', 'img']);
+  sequence('clean', 'sass', ['html', 'js', 'css', 'img']);
 });
 
 gulp.task('default', sequence('build', 'serve'));
