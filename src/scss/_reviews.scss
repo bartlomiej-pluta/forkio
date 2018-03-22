@@ -1,0 +1,24 @@
+.reviews {
+  margin-top: 85px;
+}
+
+.review {
+  padding-bottom: 50px;
+}
+
+.review__content {
+  margin-top: 40px;
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 20px;
+  color: #333333;
+  text-align: center;
+}
+
+.review__date {
+  margin-top: 30px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: $regular-text;
+  text-align: center;
+}
