@@ -6,23 +6,78 @@
   border: none;
   border-radius: 30px;
   transition: $hover-duration;
+
+  &:hover {
+    background-color: darken($primary, $hover-threshold);
+    transition: $hover-duration;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  &--strong {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  &--very-strong {
+    @extend .rounded-button--strong;
+    font-size: 21px;
+    padding: 15px 60px;
+  }
 }
 
-.rounded-button:hover {
-  background-color: darken($primary, $hover-threshold);
-  transition: $hover-duration;
-  text-decoration: none;
-  color: white;
-  cursor: pointer;
-}
-
-.rounded-button--strong {
-  font-weight: bold;
-  text-transform: capitalize;
-}
-
-.rounded-button--very-strong {
-  @extend .rounded-button--strong;
+.rect-button {
+  padding: 10px 25px;
+  font-family: Montserrat, sans-serif;
   font-size: 21px;
-  padding: 15px 60px;
+  font-weight: 500;
+  border: none;
+  border-radius: 3px;
+  background-color: $primary;
+  color: white;
+  transition: $hover-duration;
+  text-align: left;
+  line-height: 30px;
+
+  &:hover {
+    background-color: lighten($primary, $hover-threshold);
+    cursor: pointer;
+    transition: $hover-duration;
+  }
+
+  &--github {
+    background-color: $github-color;
+    color: black;
+
+    &:hover {
+      background-color: darken($github-color, $hover-threshold);
+    }
+  }
+
+  &--twitter {
+    background-color: $twitter-color;
+    color: white;
+
+    &:hover {
+      background-color: lighten($twitter-color, $hover-threshold);
+    }
+  }
+
+  &--facebook {
+    background-color: $facebook-color;
+    color: white;
+
+    &:hover {
+      background-color: lighten($facebook-color, $hover-threshold);
+    }
+  }
+
+  &--fixed-width {
+    width: 240px;
+  }
+}
+
+.rect-button__icon {
+  margin-right: 35px;
 }

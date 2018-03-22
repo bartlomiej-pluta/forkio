@@ -1,0 +1,16 @@
+.social__content {
+  border-top: solid 1px $line-light;
+  padding-top: 50px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.social__stats {
+  margin-top: 20px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: $regular-text;
+  text-align: center;
+}
