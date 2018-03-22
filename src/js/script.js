@@ -10,4 +10,10 @@ $(document).ready(function () {
       $('.navbar').removeClass('navbar--shrink');
     }
   });
+
+  $('.reviews__content').slick({
+    nextArrow: '<img class="slick-next" src="img/social/arrow-right.svg">',
+    prevArrow: '<img class="slick-prev" src="img/social/arrow-left.svg">',
+    auto: true,
+  });
 });
