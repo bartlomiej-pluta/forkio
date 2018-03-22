@@ -1,12 +1,14 @@
-$(document).ready(function () {
+(function ($) {
+  'use strict';
+
   var scrollTop = 0;
 
   $(window).scroll(function () {
     scrollTop = $(window).scrollTop();
 
-    if (scrollTop >= 100) {
+    if (scrollTop >= $(window).height() / 2) {
       $('.navbar').addClass('navbar--shrink');
-    } else if (scrollTop < 100) {
+    } else {
       $('.navbar').removeClass('navbar--shrink');
     }
   });
@@ -17,4 +19,4 @@ $(document).ready(function () {
     autoplay: true,
     autoplaySpeed: 4000,
   });
-});
+})(jQuery);
