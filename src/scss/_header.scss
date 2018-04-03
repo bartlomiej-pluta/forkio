@@ -4,7 +4,7 @@
   padding-top: 110px;
 }
 
-.header__h1 {
+.header__title {
   font-family: Montserrat, sans-serif;
   font-size: 82px;
   font-weight: bold;
@@ -13,7 +13,7 @@
   text-align: center;
 }
 
-.header__h2 {
+.header__subtitle {
   font-family: Lato, sans-serif;
   font-size: 30px;
   color: $primary;
@@ -21,7 +21,7 @@
   margin-bottom: 0;
 }
 
-.header__h3 {
+.header__description {
   margin-top: 20px;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
