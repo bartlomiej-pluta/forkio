@@ -2,11 +2,12 @@
   'use strict';
 
   var scrollTop = 0;
+  var scrollThreshold = $(window).height() / 2;
 
   $(window).scroll(function () {
     scrollTop = $(window).scrollTop();
 
-    if (scrollTop >= $(window).height() / 2) {
+    if (scrollTop >= scrollThreshold) {
       $('.navbar').addClass('navbar--shrink');
     } else {
       $('.navbar').removeClass('navbar--shrink');
