@@ -1,11 +1,9 @@
 .pricing {
-  background: $background-violet url(../img/testimonials/pricing.png) no-repeat 50% 30% / contain;
+  background: $background-violet url(../img/testimonials/pricing.png) no-repeat 50% 30%;
   padding-top: 90px;
-  position: relative;
 }
 
 .pricing__title {
-  padding-bottom: 110px;
   font-family: Montserrat, sans-serif;
   font-size: 48px;
   font-weight: bold;
@@ -15,8 +13,23 @@
 }
 
 .price {
+  position: relative;
+  margin-top: 110px;
   background-color: rgba(255, 255, 255, 0.06);
   height: 450px;
+  transition: $hover-duration;
+
+  &:hover {
+    margin-top: 70px;
+    background-color: rgba(0, 0, 0, 0.06);
+    transition: $hover-duration;
+    height: 530px;
+
+    & > .price__title {
+      background-color: rgba(0, 0, 0, 0.06);
+      transition: $hover-duration;
+    }
+  }
 }
 
 .price__title {
@@ -26,8 +39,9 @@
   font-weight: 500;
   color: white;
   text-transform: uppercase;
-  padding: 30px 50px;
+  padding: 30px 0;
   text-align: center;
+  transition: $hover-duration;
 }
 
 .price__value {
@@ -76,4 +90,3 @@
   font-size: 16px;
   text-transform: uppercase;
 }
-
