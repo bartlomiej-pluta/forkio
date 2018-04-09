@@ -15,12 +15,14 @@
 .price {
   position: relative;
   margin-top: 110px;
+  margin-bottom: 125px;
   background-color: rgba(255, 255, 255, 0.06);
   height: 450px;
   transition: $hover-duration;
 
   &:hover {
     margin-top: 70px;
+    margin-bottom: 75px;
     background-color: rgba(0, 0, 0, 0.06);
     transition: $hover-duration;
     height: 530px;
@@ -89,4 +91,12 @@
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.pricing__footer {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: $light-text;
+  text-align: center;
 }
