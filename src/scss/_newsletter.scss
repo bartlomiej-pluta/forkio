@@ -1,0 +1,15 @@
+.newsletter {
+  padding: 55px 0;
+  background-color: #f4f4f4;
+}
+
+.newsletter__title {
+  display: flex;
+  align-items: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: $primary-dark;
+  text-transform: capitalize;
+}
+

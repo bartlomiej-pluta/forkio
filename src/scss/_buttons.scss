@@ -25,6 +25,11 @@
     font-size: 21px;
     padding: 15px 60px;
   }
+
+  &--uppercase {
+    text-transform: uppercase;
+    font-weight: 500;
+  }
 }
 
 .rect-button {
