@@ -81,6 +81,20 @@
   &--fixed-width {
     width: 240px;
   }
+
+  &--small {
+    background-color: $background-light;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    color: $primary;
+    transition: $hover-duration;
+
+    &:hover {
+      background-color: darken($background-light, $hover-threshold);
+      transition: $hover-duration;
+    }
+  }
 }
 
 .rect-button__icon {
