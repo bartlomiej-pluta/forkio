@@ -1,0 +1,29 @@
+.textfield {
+  padding: 7px 25px;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  color: $regular-text;
+
+  &::placeholder {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: $gray-text;
+  }
+}
+
+.oneline__form {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+}
+
+.oneline__form__component--growing {
+  width: 100%;
+  margin: 0 20px;
+}
+
+.oneline__form__component--fixed {
+  white-space: nowrap;
+}
