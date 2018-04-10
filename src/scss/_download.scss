@@ -1,14 +1,15 @@
 .download {
   text-align: center;
+  width: 100%;
 }
 
 .download__rounded-button--translated {
-  position: absolute;
-  transform: translate(-50%, -50%);
+  position: relative;
+  bottom: 15px;
 }
 
 .download__description {
-  padding-top: 45px;
+  padding-top: 15px;
   font-family: Montserrat, sans-serif;
   font-size: 14px;
   font-weight: 500;
