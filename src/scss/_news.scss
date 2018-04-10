@@ -1,0 +1,44 @@
+.news {
+  padding-top: 70px;
+}
+
+.news__title {
+  margin-bottom: 50px;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 28px;
+  color: $lightgray-text;
+}
+
+.news-entry {
+  margin-bottom: 30px;
+}
+
+.news-entry__brief {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  color: $dark-text;
+  font-weight: 600;
+}
+
+.news-entry__title {
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  color: $primary;
+  font-weight: 600;
+  transition: $hover-duration;
+
+  &:hover {
+    color: darken($primary, $hover-threshold);
+    transition: $hover-duration;
+    text-decoration: none;
+  }
+}
+
+.news-entry__content {
+  margin-top: 15px;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  color: $regular-text;
+  font-weight: 500;
+}
