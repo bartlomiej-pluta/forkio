@@ -30,6 +30,7 @@
         font-weight: 500;
         font-size: 15px;
         color: $primary;
+        text-transform: capitalize;
         transition: $hover-duration;
 
         &:hover {
@@ -38,6 +39,37 @@
           text-decoration: none;
         }
       }
+    }
+  }
+
+  &__contact {
+    &__phone {
+      margin-bottom: 5px;
+      font-family: Montserrat, sans-serif;
+      font-weight: bold;
+      font-size: 30px;
+      color: #3f3f3f;
+    }
+
+    &__availability {
+      font-family: Montserrat, sans-serif;
+      font-weight: 600;
+      font-size: 12px;
+      color: $regular-text;
+      text-transform: uppercase;
+    }
+
+    &__city {
+      margin-top: 20px;
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+      color: $dark-text;
+    }
+
+    &__address {
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      color: $regular-text;
     }
   }
 
