@@ -1,0 +1,59 @@
+.footer {
+  margin-top: 65px;
+  padding-top: 65px;
+  border-top: solid 1px $background-light;
+  margin-bottom: 95px;
+
+  &__about {
+    &__description {
+      margin-top: 30px;
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      color: $regular-text;
+    }
+  }
+
+  &__nav {
+    &__title {
+      font-family: Montserrat, sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: $dark-text;
+    }
+
+    &__navbar {
+      padding-left: 0;
+      list-style-type: none;
+
+      & > li > a {
+        font-family: Montserrat, sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        color: $primary;
+        transition: $hover-duration;
+
+        &:hover {
+          color: darken($primary, $hover-threshold);
+          transition: $hover-duration;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__info {
+    &__title {
+      font-family: Montserrat, sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: $dark-text;
+    }
+
+    &__description {
+      margin-top: 25px;
+      font-family: Montserrat, sans-serif;
+      font-size: 14px;
+      color: $regular-text;
+    }
+  }
+}
