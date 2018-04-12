@@ -28,30 +28,34 @@
 </head>
 <body>
 <div class="wrapper" id="wrapper">
-    <div class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
-            <div class="brand navbar-header">
+    <div class="navbar navbar-light navbar-expand-lg fixed-top">
+        <div class="container navbar__content">
+            <div class="brand navbar__content__brand navbar-header">
                 <img class="brand__logo" src="img/logo.svg" alt="Forkio logo">
                 <span class="brand__name">Fork</span>
                 <span class="brand__name brand__name--emph">IO</span>
             </div>
-            <ul class="navbar__body navbar-nav">
-                <li class="nav-item">
-                    <a class="navbar__link nav-link" href="#">Overview</a>
-                </li>
-                <li class="nav-item">
-                    <a class="navbar__link nav-link" href="#">About fork</a>
-                </li>
-                <li class="nav-item">
-                    <a class="navbar__link nav-link" href="#">Buying options</a>
-                </li>
-                <li class="nav-item">
-                    <a class="navbar__link nav-link" href="#">Support</a>
-                </li>
-                <li class="nav-item">
-                    <button class="rounded-button rounded-button--strong">Buy now</button>
-                </li>
-            </ul>
+            <button class="navbar__content__toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                    aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
+                <img src="img/navbar/sandwich.svg" alt="">
+            </button>
+            <div class="collapse navbar-collapse nav-content" id="navbarNavDropdown">
+                <ul class="navbar__content__body navbar-nav mr-0 ml-auto">
+                    <li class="nav-item">
+                        <a class="navbar__link nav-link" href="#">Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar__link nav-link" href="#">About fork</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar__link nav-link" href="#">Buying options</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar__link nav-link" href="#">Support</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="navbar__content__button rounded-button rounded-button--strong">Buy now</button>
         </div>
     </div>
 
