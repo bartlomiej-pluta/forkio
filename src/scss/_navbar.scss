@@ -1,16 +1,42 @@
 $shrinking-duration: 0.4s;
 
-.navbar {
-  margin: 0 0;
-  padding: 0 90px;
-  height: 100px;
-  background-color: white;
-  transition: height $shrinking-duration;
+@media all and (min-width: $desktop) {
+  .navbar {
+    margin: 0 0;
+    padding: 0 90px;
+    height: 100px;
+    transition: height $shrinking-duration;
+  }
+
+  .navbar--shrink {
+    height: 50px;
+    transition: height $shrinking-duration;
+  }
 }
 
-.navbar--shrink {
-  height: 50px;
-  transition: height $shrinking-duration;
+.navbar {
+  background-color: white;
+}
+
+.navbar__content {
+  display: flex;
+}
+
+.navbar__content__header {
+  order: 1;
+}
+
+.navbar__content__toggler {
+  order: 4;
+  border: none;
+}
+
+.navbar__content__body {
+  order: 2;
+}
+
+.navbar__content__button {
+  order: 3;
 }
 
 .navbar__link {
