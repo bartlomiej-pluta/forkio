@@ -21,6 +21,13 @@
   margin-bottom: 0;
 }
 
+@media all and (max-width: $phone) {
+  .header__subtitle {
+    font-size: 24px;
+    text-transform: capitalize;
+  }
+}
+
 .header__description {
   margin-top: 20px;
   font-family: Montserrat, sans-serif;
