@@ -1,7 +1,12 @@
 .about {
   background-color: $background-light;
-  padding: 75px 0 0 30px;
-  height: 710px;
+
+  @media all and (max-width: $desktop-xl) {
+    .about {
+      padding: 75px 0 0 30px;
+      height: 710px;
+    }
+  }
 }
 
 .about__title {
@@ -12,5 +17,24 @@
 
   &--no-wrap {
     white-space: nowrap;
+  }
+
+  &--desktop-xl {
+    display: block;
+  }
+
+  &--desktop {
+    display: none;
+    text-align: center;
+  }
+
+  @media all and (max-width: $desktop-xl) {
+    &--desktop-xl {
+      display: none;
+    }
+
+    &--desktop {
+      display: block;
+    }
   }
 }
