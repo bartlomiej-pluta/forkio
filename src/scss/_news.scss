@@ -42,3 +42,16 @@
   color: $regular-text;
   font-weight: 500;
 }
+
+@media all and (max-width: $phone) {
+  .news__news,
+  .news__extensions,
+  .news__blog {
+    padding: 0 30px;
+  }
+
+  .news__extensions,
+  .news__blog {
+    margin-top: 50px;
+  }
+}
