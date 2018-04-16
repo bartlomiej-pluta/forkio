@@ -4,6 +4,10 @@
   padding-bottom: 80px;
   display: flex;
   justify-content: space-between;
+
+  @media all and (max-width: $tablet) {
+    flex-direction: column;
+  }
 }
 
 .social__stats {
@@ -13,4 +17,13 @@
   font-size: 14px;
   color: $regular-text;
   text-align: center;
+}
+
+.social__github,
+.social__twitter,
+.social__facebook {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
