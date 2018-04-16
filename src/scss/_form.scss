@@ -5,6 +5,7 @@
   background-color: white;
   color: $regular-text;
 
+
   &::placeholder {
     font-family: Montserrat, sans-serif;
     font-size: 14px;
@@ -21,9 +22,11 @@
 
 .oneline__form__component--growing {
   width: 100%;
-  margin: 0 20px;
+  min-width: 100px;
+  margin: 0 10px;
 }
 
 .oneline__form__component--fixed {
   white-space: nowrap;
+  margin: 0 10px;
 }

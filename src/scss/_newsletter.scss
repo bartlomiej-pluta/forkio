@@ -4,12 +4,15 @@
 }
 
 .newsletter__title {
-  display: flex;
-  align-items: center;
   font-family: Montserrat, sans-serif;
   font-weight: bold;
   font-size: 30px;
   color: $primary-dark;
   text-transform: capitalize;
+  text-align: center;
+
+  @media all and (max-width: $desktop-xl) {
+    margin-bottom: 50px;
+  }
 }
 
