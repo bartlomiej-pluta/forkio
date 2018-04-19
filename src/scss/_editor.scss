@@ -9,6 +9,9 @@
   font-weight: bold;
   text-transform: uppercase;
   color: $primary-dark;
+  @media all and (max-width: $phone) {
+    font-size: 48px;
+  }
 }
 
 .editor__subtitle {
