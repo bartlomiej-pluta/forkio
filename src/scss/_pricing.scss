@@ -21,16 +21,25 @@
   height: 450px;
   transition: $hover-duration;
 
-  @media all and (max-width: $desktop-xl) {
-    margin-top: 7px;
-    margin-bottom: 7px;
+  @media all and (max-width: $desktop) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  @media all and (min-width: $desktop) and (max-width: $desktop-xl) {
+    height: 470px;
   }
 
   &:hover {
-    @media all and (min-width: $desktop-xl) {
+    @media all and (min-width: $desktop) {
       margin-top: 70px;
       margin-bottom: 75px;
       height: 530px;
+    }
+    @media all and (max-width: $desktop) {
+      margin-top: 7px;
+      margin-bottom: 7px;
+      height: 467px;
     }
     background-color: rgba(0, 0, 0, 0.06);
     transition: $hover-duration;
