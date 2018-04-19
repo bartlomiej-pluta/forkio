@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media all and (max-width: $tablet) {
+  @media all and (max-width: $desktop) {
     flex-direction: column;
   }
 }
