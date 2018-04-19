@@ -88,4 +88,13 @@
       color: $regular-text;
     }
   }
+
+  @media all and (max-width: $phone) {
+    &__about,
+    &__nav,
+    &__contact,
+    &__info {
+      padding: 0 30px;
+    }
+  }
 }
