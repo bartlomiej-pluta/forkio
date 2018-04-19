@@ -44,9 +44,13 @@ $shrinking-duration: 0.4s;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: bolder;
-  margin: 0 20px;
   color: $primary-dark;
   transition: $hover-duration;
+  margin: 0 20px;
+
+  @media all and (max-width: $desktop-xl) {
+    margin: 0 5px;
+  }
 }
 
 .navbar__link:hover {
