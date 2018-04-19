@@ -13,22 +13,18 @@
   text-transform: capitalize;
 }
 
-.testimonials__row {
-  padding-bottom: 100px;
-  @media all and (max-width: $desktop) {
-    padding: 0 10px;
-    margin: 0;
-  }
-}
-
 .testimonial {
   position: relative;
   text-align: center;
-  min-height: 170px;
+  min-height: 180px;
 
-  @media all and (max-width: $desktop) {
+  @media all and (max-width: $phone) {
     margin-bottom: 50px;
   }
+  @media all and (min-width: $phone) {
+    margin-bottom: 100px;
+  }
+
 }
 
 .testimonial__logo {
@@ -36,7 +32,7 @@
 }
 
 .testimonial__text {
-  @media all and (min-width: $desktop-xl) {
+  @media all and (min-width: $phone) {
     position: absolute;
     bottom: 0;
   }
