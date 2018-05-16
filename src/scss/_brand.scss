@@ -5,6 +5,9 @@
 .brand__logo {
   height: 45px;
   margin-right: 17px;
+  @media all and (max-width: $phone) {
+    height: 30px;
+  }
 }
 
 .brand__name {
@@ -14,6 +17,10 @@
   font-weight: bold;
   display: inline-flex;
   align-items: center;
+
+  @media all and (max-width: $phone) {
+    font-size: 15px;
+  }
 
   &--emph {
     color: $primary;
