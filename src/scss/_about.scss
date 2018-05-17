@@ -1,5 +1,7 @@
 .about {
   background-color: $background-light;
+  width: 100%;
+  overflow-x: hidden;
 
   @media all and (max-width: $desktop-xl) {
     .about {
