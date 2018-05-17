@@ -12,6 +12,14 @@
   font-size: 20px;
   color: #333333;
   text-align: center;
+
+  @media all and (max-width: $phone) {
+    font-size: 15px;
+  }
+
+  @media all and (max-width: $small-phone) {
+    font-size: 13px;
+  }
 }
 
 .review__date {
@@ -21,4 +29,13 @@
   font-weight: 500;
   color: $regular-text;
   text-align: center;
+
+  @media all and (max-width: $phone) {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+
+  @media all and (max-width: $small-phone) {
+    font-size: 10px;
+  }
 }

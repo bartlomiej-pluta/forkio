@@ -9,19 +9,43 @@
   width: 85px;
   height: 85px;
   border-radius: 50%;
+
+
+  @media all and (max-width: $phone) {
+    height: 65px;
+    width: 65px;
+  }
+
+  @media all and (max-width: $small-phone) {
+    height: 50px;
+    width: 50px;
+  }
 }
 
 .author__details {
   margin-left: 23px;
+
+  @media all and (max-width: $phone) {
+    margin-left: 15px;
+  }
 }
 
 .author__name {
   margin: 0;
-  padding: 0;
+  padding: 0 5px 0 0;
   font-family: Montserrat, sans-serif;
   font-size: 24px;
   font-weight: bold;
   color: $primary-dark;
+
+
+  @media all and (max-width: $phone) {
+    font-size: 17px;
+  }
+
+  @media all and (max-width: $small-phone) {
+    font-size: 15px;
+  }
 }
 
 .nickname {
@@ -37,5 +61,13 @@
     font-family: Montserrat, sans-serif;
     font-weight: 600;
     font-size: 16px;
+
+    @media all and (max-width: $small-phone) {
+      font-size: 14px;
+    }
+
+    @media all and (max-width: $phone) {
+      font-size: 15px;
+    }
   }
 }
