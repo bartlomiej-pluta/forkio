@@ -24,6 +24,10 @@
     @extend .rounded-button--strong;
     font-size: 21px;
     padding: 15px 60px;
+
+    @media all and (max-width: $phone) {
+      font-size: 14px;
+    }
   }
 
   &--uppercase {

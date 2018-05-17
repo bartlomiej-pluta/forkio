@@ -1,7 +1,21 @@
 .header {
-  background: black url(../img/header/img.png) no-repeat center 120px/ cover;
   height: 100vh;
   padding-top: 110px;
+  width: 100%;
+  display: table;
+  background: $hero-background;
+  min-width: 320px;
+}
+
+.header__text {
+  display: table-row;
+  background: $hero-background;
+}
+
+.header__image {
+  background: $hero-background url(../img/header/img.png) no-repeat center top / cover;
+  display: table-row;
+  height: 100%;
 }
 
 .header__title {
@@ -19,13 +33,7 @@
   color: $primary;
   text-align: center;
   margin-bottom: 0;
-}
-
-@media all and (max-width: $phone) {
-  .header__subtitle {
-    font-size: 24px;
-    text-transform: capitalize;
-  }
+  padding: 0 10px;
 }
 
 .header__description {
@@ -36,4 +44,20 @@
   color: $regular-text;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media all and (max-width: $tablet) {
+  .header__title {
+    font-size: 60px;
+  }
+
+  .header__subtitle {
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+
+
+  .header__description {
+    font-size: 14px;
+  }
 }
