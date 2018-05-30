@@ -1,22 +1,37 @@
 .testimonials {
   position: relative;
-  background: $background-violet url(../img/testimonials/testimonials.png) no-repeat 50% 0;
+  background: $background-violet url(../img/testimonials/testimonials.png) no-repeat center 100% / cover;
+  min-width: 320px;
+
+  @media all and (max-width: $tablet) {
+    background: $background-violet url(../img/testimonials/testimonials.png) no-repeat center top;
+  }
 }
 
 .testimonials__h1 {
-  padding: 100px 0;
+  padding: 100px 50px;
   font-family: Montserrat, sans-serif;
   font-size: 48px;
   font-weight: bold;
   color: white;
   text-align: center;
   text-transform: capitalize;
+
+  @media all and (max-width: $tablet) {
+    font-size: 38px;
+  }
+
+  @media all and (max-width: $phone) {
+    font-size: 30px;
+  }
 }
 
 .testimonial {
   position: relative;
   text-align: center;
   min-height: 180px;
+  max-width: 300px;
+  margin: 0 auto;
 
   @media all and (max-width: $phone) {
     margin-bottom: 50px;
@@ -28,19 +43,18 @@
 }
 
 .testimonial__logo {
-  padding-bottom: 40px;
+  height: 80px;
 }
 
 .testimonial__text {
-  @media all and (min-width: $phone) {
-    position: absolute;
-    bottom: 0;
-  }
   font-family: Source Sans Pro, sans-serif;
   font-size: 16px;
   font-weight: bold;
   font-style: italic;
   color: white;
+
+
+
 }
 
 .testimonials__delimiter {
