@@ -49,10 +49,24 @@
   text-align: left;
   line-height: 30px;
 
+  @media all and (max-width: $desktop) {
+    font-size: 18px;
+  }
+
+  @media all and (max-width: $tablet) {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+
+  @media all and (max-width: $phone) {
+    font-size: 15px;
+  }
+
   &:hover {
     background-color: lighten($primary, $hover-threshold);
     cursor: pointer;
     transition: $hover-duration;
+    text-decoration: none;
   }
 
   &--github {
@@ -61,6 +75,7 @@
 
     &:hover {
       background-color: darken($github-color, $hover-threshold);
+      color: black;
     }
   }
 
@@ -70,6 +85,7 @@
 
     &:hover {
       background-color: lighten($twitter-color, $hover-threshold);
+      color: white;
     }
   }
 
@@ -79,11 +95,24 @@
 
     &:hover {
       background-color: lighten($facebook-color, $hover-threshold);
+      color: white;
     }
   }
 
   &--fixed-width {
     width: 240px;
+
+    @media all and (max-width: $desktop) {
+      width: 180px;
+    }
+
+    @media all and (max-width: $tablet) {
+      width: 130px;
+    }
+
+    @media all and (max-width: $phone) {
+      width: 180px;
+    }
   }
 
   &--small {
@@ -103,4 +132,16 @@
 
 .rect-button__icon {
   margin-right: 35px;
+
+  @media all and (max-width: $desktop) {
+    margin-right: 15px;
+  }
+
+  @media all and (max-width: $tablet) {
+    margin-right: 10px;
+  }
+
+  @media all and (max-width: $phone) {
+    margin-right: 35px;
+  }
 }

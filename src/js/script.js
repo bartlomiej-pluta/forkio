@@ -26,3 +26,16 @@
     $('#navbarNavDropdown').collapse('hide');
   });
 })(jQuery);
+
+(function ($) {
+  "use strict";
+
+  const p = $('#github-watchers');
+  $.get({
+    //url: 'https://api.github.com/repos/bartlomiej-pluta/forkio',
+    url: 'https://localhost',
+    success: function(data) {
+      p.text((data ? data.watchers_count : 'No') + ' Watchers');
+    },
+  });
+})(jQuery);
