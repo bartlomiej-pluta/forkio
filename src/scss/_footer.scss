@@ -49,6 +49,14 @@
       font-weight: bold;
       font-size: 30px;
       color: #3f3f3f;
+
+      @media all and (max-width: $desktop-xl) {
+        font-size: 27px;
+      }
+
+      @media all and (max-width: $desktop) {
+        font-size: 20px;
+      }
     }
 
     &__availability {

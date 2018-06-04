@@ -127,6 +127,10 @@
     color: $primary;
     transition: $hover-duration;
 
+    @media all and (max-width: $tablet) {
+      font-size: 12px;
+    }
+
     &:hover {
       background-color: darken($background-light, $hover-threshold);
       transition: $hover-duration;
