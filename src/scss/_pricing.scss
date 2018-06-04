@@ -2,53 +2,57 @@
   background: $background-violet url(../img/testimonials/pricing.png) no-repeat center / cover;
   padding-top: 90px;
   padding-bottom: 75px;
+  min-width: 320px;
 }
 
 .pricing__title {
+  padding: 10px;
   font-family: Montserrat, sans-serif;
   font-size: 48px;
   font-weight: bold;
   color: white;
   text-transform: capitalize;
   text-align: center;
+
+  @media all and (max-width: $tablet) {
+    font-size: 38px;
+  }
+
+  @media all and (max-width: $phone) {
+    font-size: 30px;
+  }
+}
+
+.price-wrapper {
+  padding: 25px 10px;
+  height: 520px;
+  transition: $hover-duration;
+
+  &:hover {
+    padding: 0 2px;
+    transition: $hover-duration;
+
+    .price {
+      background-color: rgba(0, 0, 0, 0.06);
+      transition: $hover-duration;
+
+      & > .price__title {
+        background-color: rgba(0, 0, 0, 0.06);
+        transition: $hover-duration;
+      }
+    }
+  }
+
+  @media all and (max-width: $tablet) {
+    height: 450px;
+  }
 }
 
 .price {
   position: relative;
-  margin-top: 110px;
-  margin-bottom: 125px;
+  height: 100%;
   background-color: rgba(255, 255, 255, 0.06);
-  height: 450px;
   transition: $hover-duration;
-
-  @media all and (max-width: $desktop) {
-    margin-top: 15px;
-    margin-bottom: 15px;
-  }
-
-  @media all and (min-width: $desktop) and (max-width: $desktop-xl) {
-    height: 470px;
-  }
-
-  &:hover {
-    @media all and (min-width: $desktop) {
-      margin-top: 70px;
-      margin-bottom: 75px;
-      height: 530px;
-    }
-    @media all and (max-width: $desktop) {
-      margin-top: 7px;
-      margin-bottom: 7px;
-      height: 467px;
-    }
-    background-color: rgba(0, 0, 0, 0.06);
-    transition: $hover-duration;
-
-    & > .price__title {
-      background-color: rgba(0, 0, 0, 0.06);
-      transition: $hover-duration;
-    }
-  }
 }
 
 .price__title {
@@ -61,6 +65,14 @@
   padding: 30px 0;
   text-align: center;
   transition: $hover-duration;
+
+  @media all and (max-width: $desktop-xl) {
+    font-size: 18px;
+  }
+
+  @media all and (max-width: $small-phone) {
+    font-size: 16px;
+  }
 }
 
 .price__value {
@@ -69,6 +81,14 @@
   font-weight: bold;
   color: white;
   text-align: center;
+
+  @media all and (max-width: $desktop-xl) {
+    font-size: 50px;
+  }
+
+  @media all and (max-width: $tablet) {
+    font-size: 40px;
+  }
 }
 
 .price__period {
@@ -91,17 +111,25 @@
 }
 
 .price__description {
+  padding: 0 15px;
   font-family: Montserrat, sans-serif;
   font-size: 16px;
   font-weight: 500;
   color: white;
   text-transform: capitalize;
   text-align: center;
+
+  @media all and (max-width: $desktop-xl) {
+    font-size: 13px;
+  }
+
+  @media all and (max-width: $small-phone) {
+    font-size: 11px;
+  }
 }
 
 .price__rounded-button--purchase {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0;
   background-color: rgba(255, 255, 255, 0.15);
   position: absolute;
   left: 0;
@@ -110,11 +138,25 @@
   bottom: 35px;
   margin: auto;
   display: block;
-  width: 80%;
   font-family: Montserrat, sans-serif;
   font-weight: 500;
   font-size: 16px;
   text-transform: uppercase;
+  width: 60%;
+
+  @media all and (max-width: $desktop-xl) {
+    font-size: 13px;
+    width: 70%;
+  }
+
+  @media all and (max-width: $tablet) {
+    width: 60%;
+  }
+
+  @media all and (max-width: $small-phone) {
+    font-size: 11px;
+    width: 60%;
+  }
 }
 
 .pricing__footer {
