@@ -7,6 +7,10 @@
   border-radius: 30px;
   transition: $hover-duration;
 
+  @media all and (max-width: $phone) {
+    padding: 7px 20px;
+  }
+
   &:hover {
     background-color: darken($primary, $hover-threshold);
     transition: $hover-duration;

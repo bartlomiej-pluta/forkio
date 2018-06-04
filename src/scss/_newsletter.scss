@@ -1,6 +1,7 @@
 .newsletter {
   padding: 55px 0;
   background-color: #f4f4f4;
+  min-width: 320px;
 }
 
 .newsletter__title {
@@ -12,7 +13,23 @@
   text-align: center;
 
   @media all and (max-width: $desktop-xl) {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
+  }
+
+  @media all and (max-width: $phone) {
+    font-size: 20px;
+  }
+}
+
+.newsletter__form-element {
+  font-size: 16px;
+
+  @media all and (max-width: $desktop) {
+    font-size: 14px;
+  }
+
+  @media all and (max-width: $tablet) {
+    font-size: 12px;
   }
 }
 
