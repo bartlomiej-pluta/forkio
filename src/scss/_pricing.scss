@@ -24,8 +24,8 @@
 }
 
 .price-wrapper {
-  padding: 25px 10px;
-  height: 520px;
+  padding: 40px 15px;
+  height: 560px;
   transition: $hover-duration;
 
   &:hover {
@@ -44,7 +44,7 @@
   }
 
   @media all and (max-width: $tablet) {
-    height: 450px;
+    height: 470px;
   }
 }
 
@@ -86,7 +86,7 @@
     font-size: 50px;
   }
 
-  @media all and (max-width: $tablet) {
+  @media all and (max-width: $desktop) {
     font-size: 40px;
   }
 }
