@@ -16,27 +16,60 @@ $shrinking-duration: 0.4s;
 
 .navbar {
   background-color: white;
+  min-width: 320px;
 }
 
 .navbar__content {
-  display: flex;
+  text-align: right;
 }
 
 .navbar__content__header {
-  order: 1;
 }
 
 .navbar__content__toggler {
-  order: 4;
   border: none;
+  &:focus {
+    outline: none;
+  }
 }
 
 .navbar__content__body {
-  order: 2;
 }
 
 .navbar__content__button {
-  order: 3;
+  @media all and (max-width: $phone) {
+    font-size: 12px;
+  }
+
+  @media all and (max-width: $desktop) {
+    &--desktop {
+      display: none;
+    }
+
+    &--phone {
+      display: inline;
+    }
+  }
+
+  @media all and (min-width: $desktop) {
+    &--desktop {
+      display: inline;
+    }
+
+    &--phone {
+      display: none;
+    }
+  }
+
+  @media all and (max-width: $small-phone) {
+    &--desktop {
+      display: inline;
+    }
+
+    &--phone {
+      display: none;
+    }
+  }
 }
 
 .navbar__link {
@@ -49,7 +82,7 @@ $shrinking-duration: 0.4s;
   margin: 0 20px;
 
   @media all and (max-width: $desktop-xl) {
-    margin: 0 5px;
+    margin: 0 2px;
   }
 }
 

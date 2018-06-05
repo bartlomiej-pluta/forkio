@@ -35,6 +35,7 @@
                 <span class="brand__name">Fork</span>
                 <span class="brand__name brand__name--emph">IO</span>
             </div>
+            <button class="navbar__content__button navbar__content__button--phone rounded-button rounded-button--strong">Buy now</button>
             <button class="navbar__content__toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                     aria-controls="navbarNavDropdown" aria-expanded="true" aria-label="Toggle navigation">
                 <img src="img/navbar/sandwich.svg" alt="">
@@ -53,18 +54,21 @@
                     <li class="nav-item">
                         <a class="navbar__link nav-link" href="#">Support</a>
                     </li>
+                    <li class="nav-item">
+                        <button class="navbar__content__button navbar__content__button--desktop rounded-button rounded-button--strong">Buy now</button>
+                    </li>
                 </ul>
             </div>
-            <button class="navbar__content__button rounded-button rounded-button--strong">Buy now</button>
         </div>
     </div>
 
     <header class="header">
-        <div>
+        <div class="header__text">
             <p class="header__title">Fork app</p>
             <p class="header__subtitle">A real gamechanger in the world of web development</p>
             <p class="header__description">V. 2.8 for Mac and Windows</p>
         </div>
+        <div class="header__image">&nbsp;</div>
     </header>
     <div class="download">
         <a href="#" class="rounded-button rounded-button--very-strong download__rounded-button--translated">
@@ -244,25 +248,28 @@
         <div class="row justify-content-center">
             <div class="social__content col-10">
                 <div class="social__github">
-                    <button class="rect-button rect-button--github rect-button--fixed-width">
+                    <a href="https://github.com/bartlomiej-pluta/forkio" target="_blank"
+                       class="rect-button rect-button--github rect-button--fixed-width">
                         <span class="rect-button__icon fab fa-github"></span>
                         GitHub
-                    </button>
-                    <p class="social__stats">7 352 Followers</p>
+                    </a>
+                    <p id="github-watchers" class="social__stats"></p>
                 </div>
                 <div class="social__twitter">
-                    <button class="rect-button rect-button--twitter rect-button--fixed-width">
+                    <a href="https://twitter.com/pgssoftware" target="_blank"
+                       class="rect-button rect-button--twitter rect-button--fixed-width">
                         <span class="rect-button__icon fab fa-twitter"></span>
                         Twitter
-                    </button>
-                    <p class="social__stats">136 312 Followers</p>
+                    </a>
+                    <p class="social__stats"></p>
                 </div>
                 <div class="social__facebook">
-                    <button class="rect-button rect-button--facebook rect-button--fixed-width">
+                    <a href="https://www.facebook.com/pgs.software" target="_blank"
+                       class="rect-button rect-button--facebook rect-button--fixed-width">
                         <span class="rect-button__icon fab fa-facebook-f"></span>
                         Facebook
-                    </button>
-                    <p class="social__stats">218 092 Subscribers</p>
+                    </a>
+                    <p class="social__stats"></p>
                 </div>
             </div>
         </div>
@@ -272,7 +279,9 @@
         <div class="testimonials__content container">
             <div class="testimonials__row row">
                 <div class="testimonial col-12 col-sm-6 col-xl-4">
-                    <img class="testimonial__logo" src="img/testimonials/1.png" alt="Smashing Magazine">
+                    <div class="testimonial__logo">
+                        <img src="img/testimonials/1.png" alt="Smashing Magazine">
+                    </div>
                     <p class="testimonial__text">
                         Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim
                         magna.
@@ -280,14 +289,18 @@
                     </p>
                 </div>
                 <div class="testimonial col-12 col-sm-6 col-xl-4">
-                    <img class="testimonial__logo" src="img/testimonials/2.png" alt="Smashing Magazine">
+                    <div class="testimonial__logo">
+                        <img src="img/testimonials/2.png" alt="Smashing Magazine">
+                    </div>
                     <p class="testimonial__text">
                         Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac,
                         mollis eleifend nibh.
                     </p>
                 </div>
                 <div class="testimonial col-12 col-sm-6 col-xl-4">
-                    <img class="testimonial__logo" src="img/testimonials/3.png" alt="Smashing Magazine">
+                    <div class="testimonial__logo">
+                        <img src="img/testimonials/3.png" alt="Smashing Magazine">
+                    </div>
                     <p class="testimonial__text">
                         In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet
                         nibh.
@@ -295,8 +308,10 @@
                     </p>
                 </div>
                 <div class="testimonial col-12 col-sm-6 col-xl-4">
-                    <img class="testimonial__logo" src="img/testimonials/4/1.png" alt="Smashing Magazine">
-                    <img class="testimonial__logo" src="img/testimonials/4/2.png" alt="Smashing Magazine">
+                    <div class="testimonial__logo">
+                        <img src="img/testimonials/4/1.png" alt="Smashing Magazine">
+                        <img src="img/testimonials/4/2.png" alt="Smashing Magazine">
+                    </div>
                     <p class="testimonial__text">
                         Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim
                         magna.
@@ -304,7 +319,9 @@
                     </p>
                 </div>
                 <div class="testimonial col-12 col-sm-6 col-xl-4">
-                    <img class="testimonial__logo" src="img/testimonials/5.png" alt="Smashing Magazine">
+                    <div class="testimonial__logo">
+                        <img src="img/testimonials/5.png" alt="Smashing Magazine">
+                    </div>
                     <p class="testimonial__text">
                         Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id
                         arcu
@@ -312,7 +329,9 @@
                     </p>
                 </div>
                 <div class="testimonial col-12 col-sm-6 col-xl-4">
-                    <img class="testimonial__logo" src="img/testimonials/6.png" alt="Smashing Magazine">
+                    <div class="testimonial__logo">
+                        <img src="img/testimonials/6.png" alt="Smashing Magazine">
+                    </div>
                     <p class="testimonial__text">
                         Fusce pharetra erat id odio blandit, nec
                         pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.
@@ -328,7 +347,7 @@
         <p class="pricing__title">Fork Subscription Pricing</p>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-8 col-sm-6 col-lg-3">
+                <div class="price-wrapper col-md-3 col-sm-6 col-7">
                     <div class="price">
                         <p class="price__title">Students</p>
                         <p class="price__value">$29</p>
@@ -340,7 +359,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-8 col-sm-6 col-lg-3">
+                <div class="price-wrapper col-md-3 col-sm-6 col-7">
                     <div class="price">
                         <p class="price__title">Professional</p>
                         <p class="price__value">$59</p>
@@ -352,7 +371,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-8 col-sm-6 col-lg-3">
+                <div class="price-wrapper col-md-3 col-sm-6 col-7">
                     <div class="price">
                         <p class="price__title">Agency</p>
                         <p class="price__value">$99</p>
@@ -364,7 +383,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-8 col-sm-6 col-lg-3">
+                <div class="price-wrapper col-md-3 col-sm-6 col-7">
                     <div class="price">
                         <p class="price__title">Enterprise</p>
                         <p class="price__value">$159</p>
@@ -398,9 +417,10 @@
                     Subscribe to our newsletter
                 </div>
                 <div class="col-12 col-xl-6 oneline__form">
-                    <input class="textfield oneline__form__component--growing" title="Email" placeholder="Email...">
-                    <button class="rounded-button rounded-button--uppercase oneline__form__component--fixed"
-                            type="submit">Subscribe
+                    <input class="newsletter__form-element textfield oneline__form__component--growing" title="Email" placeholder="Email...">
+                    <button class="newsletter__form-element rounded-button rounded-button--uppercase oneline__form__component--fixed"
+                            type="submit">
+                        Subscribe
                     </button>
                 </div>
             </div>

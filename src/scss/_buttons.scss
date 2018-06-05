@@ -7,6 +7,10 @@
   border-radius: 30px;
   transition: $hover-duration;
 
+  @media all and (max-width: $phone) {
+    padding: 7px 20px;
+  }
+
   &:hover {
     background-color: darken($primary, $hover-threshold);
     transition: $hover-duration;
@@ -24,6 +28,10 @@
     @extend .rounded-button--strong;
     font-size: 21px;
     padding: 15px 60px;
+
+    @media all and (max-width: $phone) {
+      font-size: 14px;
+    }
   }
 
   &--uppercase {
@@ -45,10 +53,24 @@
   text-align: left;
   line-height: 30px;
 
+  @media all and (max-width: $desktop) {
+    font-size: 18px;
+  }
+
+  @media all and (max-width: $tablet) {
+    padding: 10px 15px;
+    font-size: 15px;
+  }
+
+  @media all and (max-width: $phone) {
+    font-size: 15px;
+  }
+
   &:hover {
     background-color: lighten($primary, $hover-threshold);
     cursor: pointer;
     transition: $hover-duration;
+    text-decoration: none;
   }
 
   &--github {
@@ -57,6 +79,7 @@
 
     &:hover {
       background-color: darken($github-color, $hover-threshold);
+      color: black;
     }
   }
 
@@ -66,6 +89,7 @@
 
     &:hover {
       background-color: lighten($twitter-color, $hover-threshold);
+      color: white;
     }
   }
 
@@ -75,11 +99,24 @@
 
     &:hover {
       background-color: lighten($facebook-color, $hover-threshold);
+      color: white;
     }
   }
 
   &--fixed-width {
     width: 240px;
+
+    @media all and (max-width: $desktop) {
+      width: 180px;
+    }
+
+    @media all and (max-width: $tablet) {
+      width: 130px;
+    }
+
+    @media all and (max-width: $phone) {
+      width: 180px;
+    }
   }
 
   &--small {
@@ -90,6 +127,10 @@
     color: $primary;
     transition: $hover-duration;
 
+    @media all and (max-width: $tablet) {
+      font-size: 12px;
+    }
+
     &:hover {
       background-color: darken($background-light, $hover-threshold);
       transition: $hover-duration;
@@ -99,4 +140,16 @@
 
 .rect-button__icon {
   margin-right: 35px;
+
+  @media all and (max-width: $desktop) {
+    margin-right: 15px;
+  }
+
+  @media all and (max-width: $tablet) {
+    margin-right: 10px;
+  }
+
+  @media all and (max-width: $phone) {
+    margin-right: 35px;
+  }
 }

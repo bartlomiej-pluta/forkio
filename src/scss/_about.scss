@@ -1,12 +1,7 @@
 .about {
   background-color: $background-light;
-
-  @media all and (max-width: $desktop-xl) {
-    .about {
-      padding: 75px 0 0 30px;
-      height: 710px;
-    }
-  }
+  min-width: 320px;
+  padding: 50px 0 0;
 }
 
 .about__title {
@@ -14,6 +9,19 @@
   font-weight: bold;
   font-size: 48px;
   color: $primary;
+  margin: 0;
+
+  @media all and (max-width: $tablet) {
+    font-size: 38px;
+  }
+
+  @media all and (max-width: $phone) {
+    font-size: 25px;
+  }
+
+  @media all and (max-width: $small-phone) {
+    font-size: 23px;
+  }
 
   &--no-wrap {
     white-space: nowrap;
@@ -35,6 +43,19 @@
 
     &--desktop {
       display: block;
+    }
+  }
+}
+
+.about__what-you-get {
+  img {
+    position: relative;
+    margin-top: -50px;
+    top: 70px;
+
+
+    @media all and (max-width: $phone) {
+      height: 400px;
     }
   }
 }

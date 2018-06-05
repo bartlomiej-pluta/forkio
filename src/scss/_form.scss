@@ -11,6 +11,14 @@
     font-size: 14px;
     font-weight: 500;
     color: $gray-text;
+
+    @media all and (max-width: $tablet) {
+      font-size: 14px;
+    }
+
+    @media all and (max-width: $phone) {
+      font-size: 12px;
+    }
   }
 }
 
@@ -18,15 +26,27 @@
   display: flex;
   align-content: space-between;
   align-items: center;
+
+  @media all and (max-width: $small-phone) {
+    flex-direction: column;
+  }
 }
 
 .oneline__form__component--growing {
   width: 100%;
   min-width: 100px;
-  margin: 0 10px;
+  margin: 5px 10px;
+
+  @media all and (max-width: $phone) {
+    margin: 5px 5px;
+  }
 }
 
 .oneline__form__component--fixed {
   white-space: nowrap;
-  margin: 0 10px;
+  margin: 5px 10px;
+
+  @media all and (max-width: $phone) {
+    margin: 5px 5px;
+  }
 }
